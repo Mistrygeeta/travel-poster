@@ -46,7 +46,10 @@ nav{
     font-family: cursive;
     color:red;
 }
-
+nav > .point{
+    display: none;
+    font-size: 25px;
+}
 ul{
     display: flex;
     justify-content: space-between;
@@ -145,4 +148,40 @@ li:hover{
     width: 250px;
     height: 350px;
     border-radius: 10px;
+}
+
+@media (max-width:650px){
+    .logo{
+        font-size: 15px;
+    }
+    li {
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+    nav > .point{
+        display: initial;
+        position: absolute;
+        right: 0;
+        font-size: 30px;
+    }
+    .content{
+        flex-direction: column;
+    }
+
+    .text > h1{
+        font-size: 30px;
+    }
+    .images{
+        margin-top: 10px;
+    }
+    .img > h1{
+        display: none;
+    }
+
+    .img > img{
+       width: 180px;
+        height: 250px;
+    }
 }
